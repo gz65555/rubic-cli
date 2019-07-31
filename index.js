@@ -6,7 +6,12 @@ inquirer
       name: "template",
       message: "Which one do you want to create",
       type: "list",
-      choices: ["typescript-npm-library", "umi project"]
+      choices: ["typescript-npm-library"]
+    },
+    {
+      name: "name",
+      message: "what's your library name?",
+      type: "input"
     }
   ])
   .then(answers => {
